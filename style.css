@@ -62,6 +62,10 @@ body {
     flex-direction: row; 
 }
 
+li {
+  padding: 0 10px 0 10px;
+}
+
 @media screen and (max-width: 450px) {
 .navbar-nav {
     flex-direction: column;

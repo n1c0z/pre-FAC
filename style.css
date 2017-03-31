@@ -18,18 +18,22 @@ body {
   margin: 0;
 }
 
-.navbar-header a{
+.nav-header a{
   font-size: 1.6em;
   text-decoration: none;
   color: white;
 }
 
-.navbar-nav {
+.nav-menu {
     display: flex;
     flex-direction: row;
     padding-left: 0;
     margin-bottom: 0;
     list-style: none
+}
+
+.nav-items {
+    
 }
 
 @media screen and (max-width: 450px) {

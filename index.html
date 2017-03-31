@@ -38,7 +38,7 @@ and open the template in the editor.
 <!-- end navbar-->
     </header>
 
-          <div class="container" id="home">
+          <div class="home" id="home">
             <div class="title">
               <h1>my portfolio page</h1>
             </div>
@@ -52,21 +52,21 @@ and open the template in the editor.
         <section class="images" id="images">
             <div class="row">
               <div class="col">
-              <a href="#" target="_blank"><img class="img-thumbnail img-responsive" 
+                  <a href="#" target="_blank"><img class="img" 
               src="https://www.dropbox.com/s/fkirlxwyab9vjfc/stillife.jpg?raw=1" alt="fruits" >
               </a>
                   <figcaption>A replica of Still Life - Paul Cezanne</figcaption>
-              </div>
+                </div>
 
               <div class="col">
-              <a href="#" target="_blank"><img class="img-thumbnail img-responsive" 
+              <a href="#" target="_blank"><img class="img" 
               src="https://www.dropbox.com/s/yy5y7zfh2qp8b56/facesculpt.jpg?raw=1" alt="sculpt"></a>
               <figcaption>A partial face sculpture </figcaption>
               </div>
 
               <!-- end column -->
               <div class="col">
-              <a href="#" target="_blank"><img class="img-thumbnail img-responsive" 
+              <a href="#" target="_blank"><img class="img" 
               src="https://www.dropbox.com/s/uxm1en82ufozsgi/myfamily.jpg?raw=1" alt="drawing"></a>
               <figcaption>A drawing of my family</figcaption>
               </div>
@@ -118,15 +118,22 @@ and open the template in the editor.
     </div>
 
 
-    <section id="contact">
+    <section class="contact" id="contact">
     <div class="container">
-    <form name="contact" method="post">
+    <form name="form" method="post">
     <input type="text" name="first_name" placeholder="#name" required>
     <input  type="email" name="email" placeholder="#email" required>
     <textarea name="comments" placeholder="#message" required ></textarea>
     <button name="send" type="submit" class="submit"><strong>SEND</strong></button>
     </form>
     </div>
-    </section>        
+    </div>
+    </section> 
+
+ 	<footer role="contentinfo">
+    <div class="footer">
+    <span>© 2017</span>
+    </div>
+    </footer>
     </body>
 </html>

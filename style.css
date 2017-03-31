@@ -14,7 +14,6 @@ html {
 
 body {
   font-family: Lucida Sans Unicode, sans-serif;
-  font-weight: 400;
   margin:0;
   padding: 0;
   height: 100%;
@@ -50,7 +49,7 @@ header {
 }
 
 .navbar {
-    font-size: 1em;
+    font-size: 14px;
     border-radius: 0;
     letter-spacing: 0.2em;
     text-transform: uppercase;
@@ -61,8 +60,13 @@ header {
     display: ruby;
 }
 
+.nav-header {
+ 	font-size: 1.2em;
+ 	margin: 5px 20px 0 20px;
+
+}
+
 .nav-header a{
-  font-size: 1.5em;
   text-decoration: none;
   color: white;
   
@@ -74,7 +78,7 @@ header {
     list-style: none;
     display: ruby-base-container;
     float: right;
-    margin-top: -50px;
+    margin-top: -40px;
 }
 
 .nav-items {
@@ -88,8 +92,14 @@ li {
 }
 
 .nav-items a {
-    color: white;
+    color: #9d9d9d;
     text-decoration: none; 
+}
+
+
+.nav-items a:focus,
+.nav-items a:hover {
+	color: white;
 }
 
 @media screen and (max-width: 450px) {
@@ -97,21 +107,20 @@ li {
     flex-direction: column;
   } }
 
-.container {
+.home {
     width: 100%;
     height: auto;
     margin: 0 auto;
     text-align: center;
-
+  	padding: 50px 0;
+  	background: white;
 }
 
 .title{
-  font-size: 2.5em;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   border: 3px solid black;
   margin: 3em auto 3em auto;
-  padding: 1em;
   width: 50%;
   background: white;
 }
@@ -131,11 +140,11 @@ li {
 }
 
 h1{
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 1.5em;
     letter-spacing: 0.1em;
     font-variant: small-caps;
     padding: 10px;
@@ -162,13 +171,21 @@ border-bottom: 2px solid lightgrey;
 
 #images .row
 {
-  text-align:center;
+  text-align: center;
+  flex-direction: row;
+  display: ruby-base-container;
 }
+
+img {
+  max-width:90%;
+  max-height:90%;	
+}
+
 #images img
 {
   margin-bottom:10px;
   margin-top:20px;
-  border: 5px solid white;
+  border: 10px solid white;
   box-shadow: 0px 0px 10px #888888
 }
 
@@ -180,6 +197,7 @@ figcaption{
 #likes{
   margin: 3em auto 3em auto;
   text-align: center;
+  background: white;
 }
 
 .tag {
@@ -209,40 +227,51 @@ figcaption{
 }
 
 #contact {
-  width:60%; 
+  width:100%; 
   height:100%; 
   margin: 0 auto; 
   background: #d3d3d366; 
+
 }
 
 .container {
-  width:60%; 
-  height:auto; 
-  margin: 0 auto; 
-  padding: 50px 0;
+	width: 60%;
+	height: auto;
+	margin: 0 auto;
+	padding: 50px 0;
+
+}
+
+form{
+	width: 700px ;
+    margin: 0 auto;
+  	font-size: .9em;
+  	font-family: Lucida Sans Unicode, sans-serif;
+}
+
+input,
+textarea,
+button {
+  	font-size: 1em;
+  	font-family: Lucida Sans Unicode, sans-serif;
 }
 
 #contact .container form input,
 #contact .container form textarea {
 	width:98%;
-	height:40px;
+	height:20px;
 	padding:10px 10px;
-	font-size: 1.2em;
 	color:grey;
 	letter-spacing:1px;
 	background: white;
 	border: 1px solid lightgrey;
 	margin-bottom:2em;
-  -webkit-transition:all .1s ease-in-out;
-	-moz-transition:all .1s ease-in-out;
-	-ms-transition:all .1s ease-in-out;
-	-o-transition:all .1s ease-in-out;
-	transition:all .1s ease-in-out;}
+  	transition:all .1s ease-in-out;}
 
 #contact .container form input:focus,
 #contact .container form textarea:focus {
 	border:1px solid grey;
-  box-shadow: 0px 0px 5px black;
+  	box-shadow: 0px 0px 5px black;
 	color:black;
 }
 
@@ -251,17 +280,17 @@ figcaption{
 
 #contact .container form .submit {
   
-  text-align:center;
+  	text-align:center;
 	padding:5px 10px;
-	font-size: 1.2em;
+	font-size: 1em;
 	letter-spacing:1px;
 	background:black;
 	height:40px;
-	text-transform:uppercase;
+	text-transform:lowercase;
 	letter-spacing:1px;
 	color:grey;
 	border:1px solid grey;
-  -webkit-transition:all .1s ease-in-out;
+    -webkit-transition:all .1s ease-in-out;
 	-moz-transition:all .1s ease-in-out;
 	-ms-transition:all .1s ease-in-out;
 	-o-transition:all .1s ease-in-out;
@@ -284,5 +313,13 @@ figcaption{
       .figcaption
       .tag, .fontawe
         {
-  font-size:90%;  
+  font-size:80%;  
+}
+
+footer{
+color: white;
+background: black;
+text-align: right;
+padding: 1em;
+
 }

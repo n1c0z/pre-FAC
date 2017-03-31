@@ -45,7 +45,7 @@ header {
     margin: 0;
     padding: 10px;
     flex-direction: row;
-    display: table;
+    display: ruby;
 }
 
 .nav-header a{
@@ -58,7 +58,10 @@ header {
 .nav-menu {
     padding-left: 0;
     margin-bottom: 0;
-    list-style: none
+    list-style: none;
+    display: ruby-base-container;
+    float: right;
+
 }
 
 .nav-items {
@@ -68,6 +71,12 @@ header {
 
 li {
   padding: 0 10px 0 10px;
+  list-style-type: none;
+}
+
+.nav-items a {
+    color: white;
+    text-decoration: none; 
 }
 
 @media screen and (max-width: 450px) {

@@ -1,0 +1,221 @@
+/*
+
+*/
+
+body {
+  font-family: Lucida Sans Unicode, sans-serif;
+  font-weight: 400;
+}
+
+.navbar {
+  font-size: 1.3em;
+  border-radius: 0;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  border: 0;
+  margin: 0;
+}
+
+.navbar-header a{
+  font-size: 1.6em;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none
+}
+
+@media screen and (max-width: 450px) {
+.navbar-nav {
+    flex-direction: column;
+  } }
+
+.container-fluid {
+  width: 100%;
+}
+
+.title{
+  font-size: 2.5em;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  border: 3px solid black;
+  margin: 3em auto 3em auto;
+  padding: 1em;
+  width: 50%;
+  background: white;
+}
+
+@media screen and (max-width: 670px) {
+    .title {
+        width: 80%;
+        word-wrap: break-word;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .title {
+        width: 90%;
+        word-wrap: break-word;
+    }
+}
+
+h1{
+    font-size: 1.5em;
+}
+
+h2 {
+  font-size: 2.5em;
+  letter-spacing: 0.1em;
+  font-variant: small-caps;
+  padding: 10px;
+  text-align:center;
+}
+
+.heading {
+ background: url(https://www.dropbox.com/s/2z1n46z2cifjhta/swirl_pattern.png?raw=1);
+padding: 2px;
+border-top: 2px solid lightgrey;
+border-bottom: 2px solid lightgrey;
+}
+
+#images
+{
+  background:url(https://www.dropbox.com/s/xvbgedwz82qb8gf/background-wood.jpg?raw=1);
+  background-size:cover;
+  background-position:center center;
+  margin: 0em;
+  padding: 3em 1em 5em 1em;
+
+}
+
+#images .row
+{
+  text-align:center;
+}
+#images img
+{
+  margin-bottom:10px;
+  margin-top:20px;
+  border: 5px solid white;
+  box-shadow: 0px 0px 10px #888888
+}
+
+figcaption{
+ font-size:14px; 
+ letter-spacing: 1px;
+}
+
+#likes{
+  margin: 3em auto 3em auto;
+  text-align: center;
+}
+
+.tag {
+    margin: .5em;
+    display: inline-block;
+    padding: .8em 1.5em .8em 1.5em;
+    font-family: sans-serif;
+    text-decoration: none;
+    border: 1px solid grey;
+    border-radius: 2em;
+    letter-spacing: 0.1em;
+    color: black;
+}
+
+.fontawe {
+    margin: .5em;
+    display: inline-block;
+    padding: .5em 1em .5em 1em;
+    font-family: sans-serif;
+    text-decoration: none;
+    border: 1px solid grey;
+    border-radius: 3em;
+    font-weight: 700;
+    color: black;
+    font-size:1.5em;
+    background:url(https://www.dropbox.com/s/xg8xihj96487m77/geometry_abstract.jpg?raw=1);
+}
+
+#contact {
+  width:100%; 
+  height:100%; 
+  margin: 0 auto; 
+  background: #d3d3d366; 
+}
+
+.container {
+  width:60%; 
+  height:auto; 
+  margin: 0 auto; 
+  padding: 50px 0;
+}
+
+#contact .container form input,
+#contact .container form textarea {
+	width:98%;
+	height:40px;
+	padding:10px 10px;
+	font-size: 1.2em;
+	color:grey;
+	letter-spacing:1px;
+	background: white;
+	border: 1px solid lightgrey;
+	margin-bottom:2em;
+  -webkit-transition:all .1s ease-in-out;
+	-moz-transition:all .1s ease-in-out;
+	-ms-transition:all .1s ease-in-out;
+	-o-transition:all .1s ease-in-out;
+	transition:all .1s ease-in-out;}
+
+#contact .container form input:focus,
+#contact .container form textarea:focus {
+	border:1px solid grey;
+  box-shadow: 0px 0px 5px black;
+	color:black;
+}
+
+#contact .container form textarea {
+	height:150px;}
+
+#contact .container form .submit {
+  
+  text-align:center;
+	padding:5px 10px;
+	font-size: 1.2em;
+	letter-spacing:1px;
+	background:black;
+	height:40px;
+	text-transform:uppercase;
+	letter-spacing:1px;
+	color:grey;
+	border:1px solid grey;
+  -webkit-transition:all .1s ease-in-out;
+	-moz-transition:all .1s ease-in-out;
+	-ms-transition:all .1s ease-in-out;
+	-o-transition:all .1s ease-in-out;
+	transition:all .1s ease-in-out;}
+
+#contact .container form .submit:hover {
+	color:#FFF;
+	border:2px solid white;
+	background: #black;
+	cursor:pointer;}
+
+#contact .container form .required {
+	color:IndianRed;
+}
+
+@media screen and (max-width: 600px) {
+      .title,
+      .likes,
+      .h2, .he,
+      .figcaption
+      .tag, .fontawe
+        {
+  font-size:90%;  
+}

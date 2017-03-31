@@ -43,6 +43,13 @@ header {
     color: white;
 }
 
+
+@media screen and (max-width: 550px) { 
+header {
+    height: 90px;
+	}
+}
+
 .row {
     display: inline;
     margin-right: -15px;
@@ -110,9 +117,13 @@ li {
 	color: white;
 }
 
-@media screen and (max-width: 450px) {
-.navbar-nav {
+@media screen and (max-width: 550px) {
+.navbar-nav,
+.nav-menu,
+.nav-items 
+{
     flex-direction: column;
+
   } }
 
 .home {
@@ -181,13 +192,21 @@ border-bottom: 2px solid lightgrey;
 {
   text-align: center;
   flex-direction: row;
-  display: ruby-base-container;
+  display: flex;
+}
+
+@media screen and (max-width: 700px) {
+#images .row {
+	display: -moz-groupbox;
+
+	}
 }
 
 img {
   max-width:90%;
   max-height:90%;	
 }
+
 
 #images img
 {
@@ -201,6 +220,7 @@ figcaption{
  font-size:14px; 
  letter-spacing: 1px;
 }
+
 
 #likes{
   margin: 3em auto 3em auto;
@@ -317,7 +337,6 @@ button {
       .likes,
       .h2, .he,
       .figcaption
-      .tag, .fontawe
         {
   font-size:80%;  
 }

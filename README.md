@@ -1,3 +1,3 @@
 https://nik0lz.github.io/CF317N_Project/
 
-A simple porfolio page.
+Welcome to my page - A simple personal website.

@@ -7,134 +7,481 @@ and open the template in the editor.
 <html>
     
     
-        <title>My Portfolio</title>
+        <title>Nicholas's Page</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="robots" content="noindex">
         <link rel="stylesheet" type="text/css" href="style.css" />
         <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-        <script src="functions.js"></script>
     
     
 <body>
-    
-   <header>
-    
+        
    <!--navbar-->
-        <nav class="navbar">
+        <nav class="navbar" id="navbar" >
             <div class="row">
-            <div class="nav-header">
+            <div class="nav-header" id="nav-header">
+              <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-menu">
+		<i class="fa fa-bars"></i>
+              </button>  -->
               <a href="#">NICHOLAS</a>
             </div>
             <div class="nav-menu">
             <ul class="nav-items">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#images">Creations</a></li>
+                <li><a href="#home">Welcome</a></li>
+                <li><a href="#images">AboutMe</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#likes">Interests</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact">AcceptMe</a></li>
             </ul>
           </div>
-          </div>      
+          </div>
+  
         </nav>    
 <!-- end navbar-->
+
+<script type="text/javascript">
+
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("navbar").className = "nav-small";
+        document.getElementById("nav-header").className = "nav-head";
+        document.getElementById("nav-items").className = "nav-it";
+    } else {
+        document.getElementById("navbar").className = "navbar";
+        document.getElementById("nav-header").className = "nav-header";
+        document.getElementById("nav-items").className = "nav-items";
+    }
+}
+
+</script>
+
+
+<header class="home">
+<div class="home-body">
+	<div class="container">
+		<div class="row">
+                    <p class="home-text">WELCOME TO MY PAGE</p>
+                    <h1 class="home-heading">COLLABORATE WITH ME</h1>
+                        <ul class="list-inline">
+                            <li><a href="#" class="social-icons"><i class="fa fa-github" aria-hidden="true" style="width:40px"></i></a></li>
+                            <li><a href="#" class="social-icons"><i class="fa fa-free-code-camp" aria-hidden="true" style="width:40px"></i></a></li>
+                            <li><a href="#" class="social-icons"><i class="fa fa-codepen" aria-hidden="true" style="width:40px"></i></a></li>
+                            <li><a href="#" class="social-icons"><i class="fa fa-empire" aria-hidden="true"style="width:40px"></i></a></li>
+                        </ul>
+                    <h3 style="margin: 2em auto 0 auto;">
+                        <a href="#aboutme" class="home-btn">
+                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+			</a>
+                    </h3>    
+		</div>
+	</div>
+</div>
     </header>
 
-          <div class="home" id="home">
-            <div class="title">
-              <h1>my portfolio page</h1>
+
+    <section id="aboutme">
+    
+        <div class="container">
+    
+            <div class="col-1-3">
+                <div class="about-photo">
+                    <img class="img profile" src="img/profile.jpg" alt="my photo" width="50%" height="50%">
+                </div>
             </div>
-          </div>
-
-
-        <div class="heading"> 
-        <h2>My Little Crafts &amp Creations</h2>
+            
+            <div class="col-2-3">
+                
+                        <div class="heading">  
+                        <h2 style="text-align: left;">ABOUT ME</h2>
+                        </div>
+                        
+			<p>Web development is becoming my greatest passion for a variety of reasons. </p>
+                        <p>To start with, it embodies creativity, innovation, critical thinking, logic and most importantly engagement and interaction to its core. 
+                        What I love the most about it is the sense of fullfillment and satisfaction it creates. 
+                        The possibility of creating something that can improve a process or someone’s way of work or life, create somehing new 
+                        or offer an alternative solution to a problem is my biggest aspiration for learning web design. </p>
+                        <p>Even though I am still on my first steps, I have thoroughly enjoyed the journey so far 
+                        and I am looking forward to continue, not on my own anymore, 
+                        but as part of a collaborative community, such as Founders and Coders. 	
+			</p>
+			<p>
+                    <a href="#" class="btn"></a>
+			</p>
+		</div>
         </div>
+    </section>    
 
-        <section class="images" id="images">
+
+    <section id="experience" class="experience">
+                <div class="container">
+                    <div class="row">
+                        <div class="experience-wrapper">
+
+                            <div class="experience-content">
+                             
+                            <div class="heading">       
+                            <h2>WORK EXPERIENCE</h2>   
+                            </div>
+                                
+                            <p>
+                             My first steps in web deisgn started as a side project in my current job at St George's Hospital Tooting. 
+                             <p>Being part of a team that constantly collects data to monitor adherance to several quality standards, 
+                             it became mecessary to have a cetralised database where all these data are stored. 
+                             On top of that, members of staff who where innvolved in the data collection process 
+                             needed to interact with this database and check the progress of their projects. 
+                             With a limited budget and lack of proprierty software, developing a website that links to a database 
+                             became our only way forward. </p>
+                             <p>After a year in the making and in between other projects we finally have a functional site 
+                             that aims to serve this purpose. 
+                             However, as with the majority of web design projects, 
+                             there is always room for improvement. </p>
+                             <p>I am hoping that the Founders and Coders community and 
+                             the opportunity to participate in the full stack developer course, 
+                             will assist greatly in moving this project forward.    
+                            </p>
+                        
+                            </div>  
+                        </div>	
+                    </div>
+                </div>      
+    </section>
+
+    <section id="education" class="education">
+                <div class="container">
+                    <div class="row">
+                        <div class="education-wrapper">
+
+                            <div class="heading">  
+                            <h2>EDUCATION</h2>
+                            </div>
+                            
+                        <div class="col-2-5">
+                            
+                        <table>
+                            <tr>
+                            <td style="color:gray"> 2014-2015 </td>
+                            <td><span class="td-tl"> PRINCE2 Foundation/Practitioner | Certificate  </span><br>
+                                 APMG International
+                            </td>
+                            </tr>
+                            
+                            <tr>
+                            <td style="color:gray"> 2011-2012 </td>
+                            <td><span class="td-tl">  Visual Arts & Music | Part-time Courses </span><br>
+                                 Citylit / Morley College / Working Men's College
+                            </td>
+                            </tr>
+                            
+                            <tr>
+                            <td style="color:gray"> 2007-2011 </td>
+                            <td><span class="td-tl">  Computational Chemistry | Ph.D. </span><br>
+                                 University of Southampton
+                            </td>
+                            </tr>
+                            
+                            <tr>
+                            <td style="color:gray"> 2002-2007 </td>
+                            <td> <span class="td-tl"> Chemistry | Ptychion (2:1) </span><br>
+                                 National and Kapodistrian University of Athens
+                            </td>
+                            </tr>
+                        </table>    
+                            
+                        </div>
+
+                        <div class="col-3-5">
+                            
+                            <table style="width:100%">
+                                <tbody>
+                                    <tr>
+                                    <td style="width:20%; padding: 0;"><h3>SQL</h3></td>
+                                    <td>
+                                        <div class="progress" >
+                                            <div class="bar sql"></div>
+                                        </div>
+                                    </td>    
+                                    </tr>
+                                                                        <tr>
+                                    <td style="width:20%; padding: 0;"><h3>HTML</h3></td>
+                                    <td>
+                                        <div class="progress" >
+                                            <div class="bar html"></div>
+                                        </div>
+                                    </td>    
+                                    </tr>
+                                    
+                                                                        <tr>
+                                    <td style="width:20%; padding: 0;"><h3>CSS</h3></td>
+                                    <td>
+                                        <div class="progress" >
+                                            <div class="bar css"></div>
+                                        </div>
+                                    </td>    
+                                    </tr>
+                                    
+                                                                        <tr>
+                                    <td style="width:20%; padding: 0;"><h3>PHP</h3></td>
+                                    <td>
+                                        <div class="progress" >
+                                            <div class="bar php"></div>
+                                        </div>
+                                    </td>    
+                                    </tr>
+                                    
+                                                                        <tr>
+                                    <td style="width:20%; padding: 0;"><h3>JS</h3></td>
+                                    <td>
+                                        <div class="progress" >
+                                            <div class="bar js"></div>
+                                        </div>
+                                    </td>    
+                                    </tr>
+                                    
+                                </tbody>        
+                            </table>
+                        </div>
+                        
+                        </div>	
+                    </div>
+                </div>      
+    </section>
+
+<section class="arts" id="arts">   
+    
+    <div class="container">
+                    <div class="row">
+                        <div class="education-wrapper">
+                           
+                          <div class="heading">   
+                          <h2>ARTS &amp; CRAFTS</h2> 
+                          </div>
+                          
+                          <p>
+                              By nature, I have a passion for art, painting, design, 
+                              all of which fall under the sphere of imagination. 
+                              I greatly enjoy the creative element of any art form and 
+                              the experience of being able to create something from scratch. 
+                              A great thing about participating in a web design project is that, 
+                              when you get bogged down with algorithms, functions or calculations 
+                              you can always switch to a different aspect of it, 
+                              like experimenting with colours and design paterns; 
+                              or simply ask a member of this vast community - 
+                              a great way to create contact and connect with others. 
+                              The images below demonstrate a couple of my amature creations.  
+                          </p>
+                              
+                        </div>
+                    </div>                        
+                </div>
+   
             <div class="row">
               <div class="col">
-                  <a href="#" target="_blank"><img class="img" 
-              src="https://www.dropbox.com/s/fkirlxwyab9vjfc/stillife.jpg?raw=1" alt="fruits" >
+                  <a href="#" target="_blank"><img class="img" src="img/stillife.jpg" alt="fruits" >
               </a>
                   <figcaption>A replica of Still Life - Paul Cezanne</figcaption>
                 </div>
 
               <div class="col">
               <a href="#" target="_blank"><img class="img" 
-              src="https://www.dropbox.com/s/yy5y7zfh2qp8b56/facesculpt.jpg?raw=1" alt="sculpt"></a>
+              src="img/facesculpt.jpg" alt="sculpt"></a>
               <figcaption>A partial face sculpture </figcaption>
               </div>
 
               <!-- end column -->
               <div class="col">
               <a href="#" target="_blank"><img class="img" 
-              src="https://www.dropbox.com/s/uxm1en82ufozsgi/myfamily.jpg?raw=1" alt="drawing"></a>
+              src="img/myfamily.jpg" alt="drawing"></a>
               <figcaption>A drawing of my family</figcaption>
               </div>
               <!-- end row -->
             </div>
-        </section>
+    </section>
 
-        <div class="heading">
-        <h2>My Interests, Likes and Hobbies</h2>
-        </div>
-
-            <section class="likes" id="likes">
-             <h3>
-                 
-            <span class="tag" style="background:Thistle ">#html</span>
+    <section class="likes" id="likes">
+             
+             <div class="heading"> 
+             <h2>INTERESTS &amp; HOBBIES </h2>
+             </div>
+            
+            <div id="interests"><h3>     
             <span class="fontawe"><i class="fa fa-laptop" aria-hidden="true"></i></span>
-            <span class="tag" style="background:AliceBlue">#css</span>
-            <span class="tag" style="background:PapayaWhip ">#php</span>
+            <span class="tag" style="background:ghostwhite">#technology</span>
             <span class="fontawe"><i class="fa fa-mobile" aria-hidden="true"></i></span><br>
-            <span class="fontawe"><i class="fa fa-code" aria-hidden="true"></i></span>
-            <span class="tag" style="background:WhiteSmoke">#javascript</span>
-            <span class="fontawe"><i class="fa fa-database" aria-hidden="true"></i></span>
-            <span class="tag" style="background:HoneyDew ">#sql</span> 
-            <span class="fontawe"><i class="fa fa-linux" aria-hidden="true"></i>
-            </span>
-            <span class="fontawe"><i class="fa fa-wordpress" aria-hidden="true"></i></span> <br>
+            <span class="tag" style="background:mintcream">#design</span>
+            <span class="fontawe"><i class="fa fa-wordpress" aria-hidden="true"></i></span>            
+            <span class="tag" style="background:lavender">#science</span>
+            <span class="fontawe"><i class="fa fa-linux" aria-hidden="true"></i></span>
+            <br> 
             <span class="tag" style="background:LemonChiffon">#art</span>
             <span class="fontawe"><i class="fa fa-music" aria-hidden="true"></i>
             </span>
             <span class="tag" style="background:MistyRose">#health</span>
             <span class="tag" style="background:LightCyan ">#well-being</span>
             <br>
-            <span class="tag" style="background:AliceBlue">#technology</span>
+            <span class="tag" style="background:AliceBlue">#yoga</span>
             <span class="fontawe"><i class="fa fa-film" aria-hidden="true"></i></span>
-            <span class="tag" style="background:Cornsilk">#science</span>
+            <span class="tag" style="background:Cornsilk">#cooking</span>
             <span class="fontawe"><i class="fa fa-flask" aria-hidden="true"></i></span>
-            <span class="tag" style="background:Lavender">#design</span><br>
-            <span class="fontawe"><i class="fa fa-coffee" aria-hidden="true"></i>
-            </span>
-            <span class="tag" style="background:MintCream">#meditation</span> 
+            <span class="tag" style="background:Lavender">#swimming</span><br>
+            <span class="fontawe"><i class="fa fa-coffee" aria-hidden="true"></i></span>
+            <span class="tag" style="background:whitesmoke">#mindfulness</span> 
             <span class="fontawe"><i class="fa fa-smile-o" aria-hidden="true"></i></span><br>
-            </h3>
+            </h3></div>
    
-            </section>
+    </section>
 
 
-    <div class="heading">
-    <h2>Leave a Message</h2>
-    </div>
-
-
-    <section class="contact" id="contact">
+    <section class="quotes" id="quotes">
+        
     <div class="container">
-    <form name="form" method="post">
-    <input type="text" name="first_name" placeholder="#name" required>
-    <input  type="email" name="email" placeholder="#email" required>
-    <textarea name="comments" placeholder="#message" required ></textarea>
-    <button name="send" type="submit" class="submit"><strong>SEND</strong></button>
-    </form>
-    </div>
-    </div>
-    </section> 
+        <div class="row">        
+                <div class="quote">
 
- 	<footer role="contentinfo">
+                <div class="heading"> 
+                <h2>SOME OF MY FAVOURITE QUOTES </h2>
+                </div>
+                    
+                    <ul>
+                        <li class="item" id="q1">
+                            <div class="qt">
+                            <h4><q>No legacy is so rich as honesty</q></h4>
+                            <p>William Shakespeare</p>
+                            </div>
+                        </li>
+                        <li class="item" id="q2">
+                            <div class="qt">
+                            <h4><q>Obstacles are those frightful things you see when you take your eyes off your goal</q></h4>
+                            <p>Henry Ford</p>
+                            </div>
+                        </li>
+                        <li class="item" id="q3">
+                            <div class="qt">
+                            <h4><q>Without freedom of thought, there can be no such thing as wisdom - and no such thing as public liberty without freedom of speech</q></h4>
+                            <p>Benjamin Franklin</p>
+                            </div>
+                        </li>    
+                        <li class="item" id="q4">
+                            <div class="qt">
+                            <h4><q>Knowing others is wisdom, knowing yourself is Enlightenment</q></h4>
+                            <p>Lao Tzu</p>
+                        </li>
+                        <li class="item" id="q5">
+                            <div class="qt">
+                            <h4><q>The choices we make lead up to actual experiences. It is one thing to decide to climb a mountain. It is quite another to be on top of it</q></h4>
+                            <p>Herbert A. Simon</p>
+                            </div>
+                        </li>
+                        <li class="item" id="q6">
+                            <div class="qt">
+                            <h4><q>To know, is to know that you know nothing. That is the meaning of true knowledge</q></h4>
+                            <p>Socrates</p>
+                            </div>
+                        </li>
+                        <li class="item" id="q7">
+                            <div class="qt">
+                            <h4><q>Put your heart, mind, and soul into even your smallest acts. This is the secret of success</q></h4>
+                            <p>Swami Sivananda</p>
+                            </div>
+                        </li>
+                        <li class="item" id="q8">
+                            <div class="qt">
+                            <h4><q>My mission in life is not merely to survive, but to thrive; and to do so with some passion, some compassion, some humor, and some style</q></h4>
+                            <p>Maya Angelou</p>
+                            </div>
+                        </li>
+                        <li class="item" id="q9">
+                            <div class="qt">
+                            <h4><q>Here are the values that I stand for: honesty, equality, kindness, compassion, treating people the way you want to be treated and helping those in need</q></h4>
+                            <p>Ellen DeGeneres</p>
+                            </div>
+                        </li>
+                        <li class="item" id="q10">
+                            <div class="qt">
+                            <h4><q>Let us be absolutely clear about one thing: we must not confuse humility with false modesty or servility.</q></h4>
+                            <p>Paulo Coelho</p>
+                            </div>
+                        </li>
+                        <li class="item" id="q11">
+                            <div class="qt">
+                            <h4><q>Learn from yesterday, live for today, hope for tomorrow. The important thing is not to stop questioning</q></h4>
+                            <p>Albert Einstein</p>
+                            </div>
+                        </li>
+                        <li class="item" id="q12">
+                            <div class="qt">
+                            <h4><q>The biggest ingredient in a best friend is someone whose actions you respect and who you can truly be yourself around.</q></h4>
+                            <p>Renee Olstead</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+        <section id="contact" class="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="contact-wrapper">
+
+                                <div class="contact-area">
+
+                                    <div class="heading">                                      
+                                    <h2>GET IN TOUCH</h2>
+                                    </div>
+                                    
+                                    <form method="post" action="contact.php" id="contactform">
+                                            <div class="form">
+                                                    <input type="text" class="form-item" name="name" placeholder="Name *">
+                                                    <input type="email" class="form-item" name="email" placeholder="E-mail Address *">
+                                                    <input type="text" class="form-item" placeholder="Subject *">
+                                                    <textarea id="form-area" rows="10"  name="message" placeholder="Your Message *"></textarea>
+                                                    <input type="submit" id="submit" value="Send">
+                                            </div>
+                                    </form>
+
+                                </div>
+
+
+                                <div class="contact-message">
+
+                                    <div class="heading">                                      
+                                    <h2>ACCEPT ME</h2>
+                                    </div>
+                                    
+                                    <div class="acceptme">
+                                        <p>
+                                        I couldn't be any more grateful for the challenges and encouregment that the Founders and Coders community have given me to go on. <br>
+                                        It would be an absolute honour to be able to join the next cohort and being able to actively contribute to any on going projects. <br>
+                                        Even though this will be my third application for the London course, I am hoping this will also be the luckiest. <br>
+                                        So why don't you go ahead and click the button below!
+                                        </p>
+                                        
+                                        <button>ACCEPT ME!</button>
+                                        
+                                    </div>
+                                    
+                                </div>
+
+                    </div>
+                </div>
+            </div>       
+        </section>
+
+
+  <footer role="contentinfo">
     <div class="footer">
-    <span>© 2017</span>
+    <span>NICHOLAS © 2017</span>
     </div>
     </footer>
+            <!-- Custom JavaScript
+        <script type="text/javascript" src="js/functions.js"></script> -->
+        <!-- Contact Form JavaScript 
+        <script type="text/javascript" src="js/validate.js"></script> -->
+
     </body>
 </html>

@@ -42,9 +42,9 @@ and open the template in the editor.
 
 <script type="text/javascript">
 
-window.onscroll = function() {myFunction()};
+window.onscroll = function() {minimiseBar();};
 
-function myFunction() {
+function minimiseBar() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         document.getElementById("navbar").className = "nav-small";
         document.getElementById("nav-header").className = "nav-head";
@@ -53,6 +53,13 @@ function myFunction() {
         document.getElementById("navbar").className = "navbar";
         document.getElementById("nav-header").className = "nav-header";
         document.getElementById("nav-items").className = "nav-items";
+    }
+    if (document.body.scrollTop > 1400 || document.documentElement.scrollTop > 1400) {
+        document.getElementById("sql").className = "bar pbsql"; 
+        document.getElementById("html").className = "bar pbhtml";
+        document.getElementById("css").className = "bar pbcss";
+        document.getElementById("php").className = "bar pbphp";
+        document.getElementById("js").className = "bar pbjs";     
     }
 }
 
@@ -66,10 +73,10 @@ function myFunction() {
                     <p class="home-text">WELCOME TO MY PAGE</p>
                     <h1 class="home-heading">COLLABORATE WITH ME</h1>
                         <ul class="list-inline">
-                            <li><a href="#" class="social-icons"><i class="fa fa-github" aria-hidden="true" style="width:40px"></i></a></li>
-                            <li><a href="#" class="social-icons"><i class="fa fa-free-code-camp" aria-hidden="true" style="width:40px"></i></a></li>
-                            <li><a href="#" class="social-icons"><i class="fa fa-codepen" aria-hidden="true" style="width:40px"></i></a></li>
-                            <li><a href="#" class="social-icons"><i class="fa fa-empire" aria-hidden="true" style="width:40px"></i></a></li>
+                            <li><a href="#" class="fa-icons"><i class="fa fa-github" aria-hidden="true" style="width:40px"></i></a></li>
+                            <li><a href="#" class="fa-icons"><i class="fa fa-free-code-camp" aria-hidden="true" style="width:40px"></i></a></li>
+                            <li><a href="#" class="fa-icons"><i class="fa fa-codepen" aria-hidden="true" style="width:40px"></i></a></li>
+                            <li><a href="#" class="fa-icons"><i class="fa fa-empire" aria-hidden="true" style="width:40px"></i></a></li>
                         </ul>
                     <h3 style="margin: 2em auto 0 auto;">
                         <a href="#aboutme" class="home-btn">
@@ -199,16 +206,16 @@ function myFunction() {
                                     <tr>
                                     <td style="width:20%; padding: 0;"><h3>SQL</h3></td>
                                     <td>
-                                        <div class="progress" >
-                                            <div class="bar sql"></div>
+                                        <div class="progress">
+                                            <div class="bar" id="sql"></div>
                                         </div>
                                     </td>    
                                     </tr>
                                                                         <tr>
                                     <td style="width:20%; padding: 0;"><h3>HTML</h3></td>
                                     <td>
-                                        <div class="progress" >
-                                            <div class="bar html"></div>
+                                        <div class="progress">
+                                            <div class="bar" id="html"></div>
                                         </div>
                                     </td>    
                                     </tr>
@@ -217,7 +224,7 @@ function myFunction() {
                                     <td style="width:20%; padding: 0;"><h3>CSS</h3></td>
                                     <td>
                                         <div class="progress" >
-                                            <div class="bar css"></div>
+                                            <div class="bar" id="css"></div>
                                         </div>
                                     </td>    
                                     </tr>
@@ -226,7 +233,7 @@ function myFunction() {
                                     <td style="width:20%; padding: 0;"><h3>PHP</h3></td>
                                     <td>
                                         <div class="progress" >
-                                            <div class="bar php"></div>
+                                            <div class="bar" id="php"></div>
                                         </div>
                                     </td>    
                                     </tr>
@@ -235,7 +242,7 @@ function myFunction() {
                                     <td style="width:20%; padding: 0;"><h3>JS</h3></td>
                                     <td>
                                         <div class="progress" >
-                                            <div class="bar js"></div>
+                                            <div class="bar" id="js"></div>
                                         </div>
                                     </td>    
                                     </tr>
@@ -249,7 +256,8 @@ function myFunction() {
                 </div>      
     </section>
 
-<section class="arts" id="arts">   
+
+    <section class="arts" id="arts">   
     
     <div class="container">
                     <div class="row">
@@ -307,31 +315,7 @@ function myFunction() {
     </section>
 
     <script>
-    // Get the modal
-    var modal = document.getElementById('modal');
 
-    // Get the button that opens the modal
-    var btn = document.getElementById("img");
-
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-
-    // When the user clicks the button, open the modal 
-    btn.onclick = function() {
-        modal.style.display = "block";
-    }
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-        modal.style.display = "none";
-    }
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
     </script>
 
     <section class="likes" id="likes">

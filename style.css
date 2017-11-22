@@ -295,7 +295,7 @@ header {
     padding-left: 5px;
 }
 
-.social-icons {
+.fa-icons {
     font-size: 30px;
     color: lightgrey;
     padding: 11px;
@@ -306,8 +306,8 @@ header {
     transition-timing-function: cubic-bezier(1,1,1,1); 
 }
 
-.social-icons:hover,
-.social-icons:focus {
+.fa-icons:hover,
+.fa-icons:focus {
     color: black;
     background:rgba(255,255,255,0.3);
 }
@@ -356,8 +356,7 @@ header {
 }
 
 .about-photo {
-    width: 50%;
-    height:50%;
+    width:  230px;
     margin: auto;
     padding-top: 2em;
 }
@@ -451,31 +450,48 @@ header {
   text-align: center;
   line-height: 30px;
   color: white;
+  width:1%;
 }  
 
-.sql{
+.pbsql{
     width: 75%;
-    background-color: palegoldenrod;
+    background-color: darkcyan;
+    transition-duration: 2s;
+    transition-property: all;
+    -webkit-transition: 2s;
+
 }
 
-.html{
+.pbhtml{
     width: 60%;
-    background-color: palegreen;
+    background-color: darkolivegreen;
+    transition-duration: 2s;
+    transition-property: all;
+    -webkit-transition: 2s;
 }
 
-.css{
+.pbcss{
     width: 50%;
-    background-color: paleturquoise;
+    background-color: darkgoldenrod;
+    transition-duration: 2s;
+    transition-property: all;
+    -webkit-transition: 2s;
 }
 
-.php{
-    width: 65%;
-    background-color: lightpink;
+.pbphp{
+    width: 55%;
+    background-color: darkred;
+    transition-duration: 2s;
+    transition-property: all;
+    -webkit-transition: 2s;
 }
 
-.js{
+.pbjs{
     width: 40%;
-    background-color: thistle;
+    background-color: darkmagenta;
+    transition-duration: 2s;
+    transition-property: all;
+    -webkit-transition: 2s;
 }
 
 
@@ -668,13 +684,13 @@ figcaption{
 .contact-area {
     width: 47%;
     float:left;
-    padding: 20px;
+    padding: 10px;
 }
 
 .contact-message {
-    width: 47%;
+    width: 520px;
     float: left;
-    padding: 20px;
+    padding: 10px;
 }
 
 .form {
@@ -711,7 +727,6 @@ figcaption{
     padding: .8em 1.5em .8em 1.5em;
     font-family: sans-serif;
     text-decoration: none;
-    border: 1px solid white;
     border-radius: 2em;
     letter-spacing: 0.1em;
     color: white;
@@ -724,14 +739,13 @@ figcaption{
 #submit:focus {
     color: black;
     background: white;  
-    border: 1px solid black;   
     font-weight: 700;
 }
 
 .acceptme {
     line-height: 2;
     font-size: 1.1em;
-    padding: 2em;
+    padding: 0 2em 0 2em;
 }
 
 button {

@@ -287,34 +287,37 @@ function minimiseBar() {
    
             <div class="row">
               <div class="col">
-                  <a href="#modal" onclick="modal"><img class="img" src="img/stillife.jpg" alt="fruits" >
-              </a>
+                  <img  src="img/stillife.jpg" alt="fruits"  onclick="onClick(this)" class="modal-hover">
                   <figcaption>A replica of Still Life - Paul Cezanne</figcaption>
                 </div>
 
               <div class="col">
-              <a href="#modal" target="_blank"><img class="img" 
-              src="img/facesculpt.jpg" alt="sculpt"></a>
+              <img src="img/facesculpt.jpg" alt="sculpt" onclick="onClick(this)" class="modal-hover" >
               <figcaption>A partial face sculpture </figcaption>
               </div>
 
               <!-- end column -->
               <div class="col">
-              <a href="#modal" target="_blank"><img class="img" 
-              src="img/myfamily.jpg" alt="drawing"></a>
+              <img src="img/myfamily.jpg" alt="drawing" onclick="onClick(this)" class="modal-hover">
               <figcaption>A drawing of my family</figcaption>
               </div>
               <!-- end row -->
             </div>
     
-            <div id="modal" class="modal">
-                <div class="modal-content">
-                  <span class="close">&times;</span>
-                </div>
+            <div id="modal" class="modal" onclick="this.style.display='none'">
+              <span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+              <div class="modal-image">
+                <img id="img" style="max-width:100%">
+              </div>
             </div>
     </section>
 
     <script>
+
+    function onClick(element) {
+      document.getElementById("img").src = element.src;
+      document.getElementById("modal").style.display = "block";
+    }
 
     </script>
 
@@ -324,30 +327,27 @@ function minimiseBar() {
              <h2>INTERESTS &amp; HOBBIES </h2>
              </div>
             
-            <div id="interests"><h3>     
+            <div id="interests">     
             <span class="fontawe"><i class="fa fa-laptop" aria-hidden="true"></i></span>
             <span class="tag" style="background:ghostwhite">#technology</span>
-            <span class="fontawe"><i class="fa fa-mobile" aria-hidden="true"></i></span><br>
+            <span class="fontawe"><i class="fa fa-mobile" aria-hidden="true"></i></span>
             <span class="tag" style="background:mintcream">#design</span>
             <span class="fontawe"><i class="fa fa-wordpress" aria-hidden="true"></i></span>            
             <span class="tag" style="background:lavender">#science</span>
             <span class="fontawe"><i class="fa fa-linux" aria-hidden="true"></i></span>
-            <br> 
             <span class="tag" style="background:LemonChiffon">#art</span>
-            <span class="fontawe"><i class="fa fa-music" aria-hidden="true"></i>
-            </span>
+            <span class="fontawe"><i class="fa fa-music" aria-hidden="true"></i></span>
             <span class="tag" style="background:MistyRose">#health</span>
             <span class="tag" style="background:LightCyan ">#well-being</span>
-            <br>
             <span class="tag" style="background:AliceBlue">#yoga</span>
             <span class="fontawe"><i class="fa fa-film" aria-hidden="true"></i></span>
             <span class="tag" style="background:Cornsilk">#cooking</span>
             <span class="fontawe"><i class="fa fa-flask" aria-hidden="true"></i></span>
-            <span class="tag" style="background:Lavender">#swimming</span><br>
+            <span class="tag" style="background:Lavender">#swimming</span>
             <span class="fontawe"><i class="fa fa-coffee" aria-hidden="true"></i></span>
             <span class="tag" style="background:whitesmoke">#mindfulness</span> 
-            <span class="fontawe"><i class="fa fa-smile-o" aria-hidden="true"></i></span><br>
-            </h3></div>
+            <span class="fontawe"><i class="fa fa-smile-o" aria-hidden="true"></i></span>
+            </div>
    
     </section>
 
@@ -363,72 +363,72 @@ function minimiseBar() {
                 </div>
                     
                     <ul>
-                        <li class="item" id="q1">
+                        <li class="item">
                             <div class="qt">
                             <h4><q>No legacy is so rich as honesty</q></h4>
                             <p>William Shakespeare</p>
                             </div>
                         </li>
-                        <li class="item" id="q2">
+                        <li class="item" >
                             <div class="qt">
                             <h4><q>Obstacles are those frightful things you see when you take your eyes off your goal</q></h4>
                             <p>Henry Ford</p>
                             </div>
                         </li>
-                        <li class="item" id="q3">
+                        <li class="item">
                             <div class="qt">
                             <h4><q>Without freedom of thought, there can be no such thing as wisdom - and no such thing as public liberty without freedom of speech</q></h4>
                             <p>Benjamin Franklin</p>
                             </div>
                         </li>    
-                        <li class="item" id="q4">
+                        <li class="item">
                             <div class="qt">
                             <h4><q>Knowing others is wisdom, knowing yourself is Enlightenment</q></h4>
                             <p>Lao Tzu</p>
                         </li>
-                        <li class="item" id="q5">
+                        <li class="item">
                             <div class="qt">
                             <h4><q>The choices we make lead up to actual experiences. It is one thing to decide to climb a mountain. It is quite another to be on top of it</q></h4>
                             <p>Herbert A. Simon</p>
                             </div>
                         </li>
-                        <li class="item" id="q6">
+                        <li class="item">
                             <div class="qt">
                             <h4><q>To know, is to know that you know nothing. That is the meaning of true knowledge</q></h4>
                             <p>Socrates</p>
                             </div>
                         </li>
-                        <li class="item" id="q7">
+                        <li class="item">
                             <div class="qt">
                             <h4><q>Put your heart, mind, and soul into even your smallest acts. This is the secret of success</q></h4>
                             <p>Swami Sivananda</p>
                             </div>
                         </li>
-                        <li class="item" id="q8">
+                        <li class="item">
                             <div class="qt">
                             <h4><q>My mission in life is not merely to survive, but to thrive; and to do so with some passion, some compassion, some humor, and some style</q></h4>
                             <p>Maya Angelou</p>
                             </div>
                         </li>
-                        <li class="item" id="q9">
+                        <li class="item">
                             <div class="qt">
                             <h4><q>Here are the values that I stand for: honesty, equality, kindness, compassion, treating people the way you want to be treated and helping those in need</q></h4>
                             <p>Ellen DeGeneres</p>
                             </div>
                         </li>
-                        <li class="item" id="q10">
+                        <li class="item">
                             <div class="qt">
                             <h4><q>Let us be absolutely clear about one thing: we must not confuse humility with false modesty or servility.</q></h4>
                             <p>Paulo Coelho</p>
                             </div>
                         </li>
-                        <li class="item" id="q11">
+                        <li class="item">
                             <div class="qt">
                             <h4><q>Learn from yesterday, live for today, hope for tomorrow. The important thing is not to stop questioning</q></h4>
                             <p>Albert Einstein</p>
                             </div>
                         </li>
-                        <li class="item" id="q12">
+                        <li class="item">
                             <div class="qt">
                             <h4><q>The biggest ingredient in a best friend is someone whose actions you respect and who you can truly be yourself around.</q></h4>
                             <p>Renee Olstead</p>
@@ -440,6 +440,25 @@ function minimiseBar() {
         </div>
     </section>
 
+    <script>
+    
+    window.onload = chooseImg;
+    
+    function chooseImg () {
+    
+    var img = new Array('bgs/1.jpg','bgs/2.jpg','bgs/3.jpg','bgs/4.jpg','bgs/5.jpg','bgs/6.jpg','bgs/7.jpg','bgs/8.jpg','bgs/9.jpg','bgs/10.jpg','bgs/11.jpg','bgs/12.jpg','bgs/13.jpg','bgs/14.jpg','bgs/15.jpg','bgs/16.jpg','bgs/17.jpg','bgs/18.jpg','bgs/19.jpg','bgs/20.jpg');
+    var x= document.getElementsByClassName("item");
+    var i;
+    for(i=0;i<x.length;i++)
+        {
+            var randomNum = Math.round(Math.random() * (img.length - 1)) + 1;
+            x[i].style.backgroundImage = 'url('+img[randomNum]+')';
+            x[i].style.backgroundRepeat = "no-repeat";
+        }
+    }
+
+    </script>
+    
 
         <section id="contact" class="contact">
                 <div class="container">

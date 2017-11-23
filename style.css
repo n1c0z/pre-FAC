@@ -755,6 +755,7 @@ figcaption{
     background-color: #eaeaea;
     width: 100%;
     overflow: hidden;
+    padding-top: 2em;
 }
 
 .contact-wrapper{

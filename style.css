@@ -69,6 +69,9 @@ q {
     
 }
 
+@media screen and (max-width: 400px) {
+body {font-size:90%; }
+}
 
 header {
     height: 30px;
@@ -225,10 +228,13 @@ header {
 	color: #9d9d9d;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 780px) {
 .navbar,
 .nav-menu,
-.nav-items {
+.nav-items,
+.nav-itm,
+.nav-head
+{
     flex-direction: column;
   } 
 }
@@ -325,6 +331,8 @@ header {
     transition-property: all;
 }
 
+
+
 /* Headings */
 
 .heading {
@@ -336,7 +344,16 @@ header {
 
 }
 
+@media screen and (max-width: 500px) {
+    .home-heading {
+	font-size:26px;
+    }
+    .heading { font-size: 1em; }
+}
+
 /*For About Me Section*/
+
+.abm {text-align: left}
 
 #aboutme {
     padding: 50px 10px 50px 10px;
@@ -356,6 +373,7 @@ header {
     padding-top: 2em;
 }
 
+ 
 .col-1-3 {
     width:30%;
     float:left;
@@ -368,6 +386,12 @@ header {
     text-align: justify;
 }
 
+@media screen and (max-width: 1000px) {
+    .about-photo {display:none}
+    .col-2-3 {width: 95%; 
+              margin: auto 1em auto 1em;}
+    .abm {text-align:center}
+}    
 
 /*For Experience Section*/
 
@@ -401,6 +425,11 @@ header {
     font-weight:600;
     margin-bottom:50px;
 }
+
+@media screen and (max-width: 770px) {
+    .experience-content{ width: 90%; padding: 1em}
+}    
+   
 
 /*For Education Section*/
 
@@ -489,6 +518,9 @@ header {
     -webkit-transition: 2s;
 }
 
+@media screen and (max-width: 770px) {
+    .col-2-5, .col-3-5  { width: 90%; padding: 1em}
+} 
 
 /*For Arts & Crafts Section*/
 
@@ -508,17 +540,15 @@ header {
   display: flex;
 }
 
-@media screen and (max-width: 700px) {
-#arts .row {
-	display: -moz-groupbox;
-    }
-}
-
 img {
     max-width:90%;
     max-height:90%;	
 }
 
+.col-img{
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
 
 #arts img
 {
@@ -533,6 +563,25 @@ figcaption{
     letter-spacing: 1px;
 }
 
+@media screen and (max-width: 700px) {
+#arts .row {
+	display: block;
+    }
+    .col-img {
+        flex: 0 0 70%;
+        max-width: 70%;
+        margin: 0 auto 0 auto;
+    }    
+}
+
+@media screen and (max-width: 350px) { 
+    .col-img {
+        flex: 0 0 95%;
+        max-width: 95%;
+        margin: 0 auto 0 auto;
+    } 
+    
+}
 
 /* For Modal Functionality */
 
@@ -630,6 +679,12 @@ figcaption{
 }
 
 
+@media screen and (max-width: 800px) {
+    #interests {
+    height:100%;    
+    }
+}
+
 /*For Quotes Section*/
 
 #quotes {
@@ -673,6 +728,26 @@ figcaption{
     opacity: 0;
 }
 
+@media screen and (max-width: 1024px) {
+    .item {height: 250px;}
+}
+
+@media screen and (max-width: 850px) {
+    .item {width: 33.33%;}
+    .qt h4 {font-size:1em}
+}
+
+@media screen and (max-width: 600px) {
+    .item {width: 50%; height: 200px;}
+    .qt h4 {font-size:1em}
+
+}
+
+@media screen and (max-width: 350px) {
+    .item {width: 100%; height: 150px;}
+    .qt h4 {font-size:1em}
+
+}
 
 /*For Contact Section*/
 
@@ -694,9 +769,12 @@ figcaption{
 }
 
 .contact-message {
-    width: 520px;
-    float: left;
+    width: 47%;
+    float: right;
     padding: 10px;
+    max-width: 520px;
+    margin: 0 auto 0 auto;
+
 }
 
 .form {
@@ -799,10 +877,40 @@ button {
   animation: glowing 1500ms infinite;
 }
 
+@media screen and (max-width: 850px) {
+    .contact-area,
+    .contact-message {
+        width:90%;
+        margin: 0 auto 0 auto;
+        float: left;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .contact-area,
+    .contact-message {
+        margin: 0 auto 0 auto;
+        float: left;
+        max-width: 100%;
+        padding: 1em;
+    }  
+    .contact-wrapper {
+        padding: 0;
+    }
+}
+
+
 footer{
 color: white;
 background: black;
 text-align: right;
 padding: 10px;
 color: #9d9d9d;
+}
+
+@media screen and (max-width: 800px) {
+    footer {
+    padding: 5px;
+    font-size:0.8em; }
 }

@@ -75,7 +75,6 @@ function minimiseBar() {
                         <ul class="list-inline">
                             <li><a href="#" class="fa-icons"><i class="fa fa-github" aria-hidden="true" style="width:40px"></i></a></li>
                             <li><a href="#" class="fa-icons"><i class="fa fa-free-code-camp" aria-hidden="true" style="width:40px"></i></a></li>
-                            <li><a href="#" class="fa-icons"><i class="fa fa-codepen" aria-hidden="true" style="width:40px"></i></a></li>
                             <li><a href="#" class="fa-icons"><i class="fa fa-empire" aria-hidden="true" style="width:40px"></i></a></li>
                         </ul>
                     <h3 style="margin: 2em auto 0 auto;">
@@ -444,26 +443,27 @@ function minimiseBar() {
     
     window.onload = chooseClr();
     
-    function getRandomColor() {
+    function getRandomColour() {
       var letters = '0123456789ABCDEF';
-      var color = '#';
+      var colour = '#';
       for (var i = 0; i < 6; i++) {
-        color += letters[Math.floor(Math.random() * 16)];
+        colour += letters[Math.floor(Math.random() * 16)];
       }
-      return color;
+      return colour;
     } 
     
     function chooseClr () {
        
     var items = document.getElementsByClassName("item");
+    var grad3 = 'rgb(220, 220, 220)';
     var i;
     for(i=0;i<items.length;i++) {
-            
-            items[i].style.background=getRandomColor();
-            items[i].style.background='-webkit-linear-gradient('+getRandomColor()+',grey);';
-            items[i].style.background='-o-linear-gradient('+getRandomColor()+',grey);';
-            items[i].style.background='-moz-linear-gradient('+getRandomColor()+',grey);';
-            items[i].style.background='linear-gradient('+getRandomColor()+',grey);';
+            var grad2 = getRandomColour().toString();
+            items[i].style.backgroundImage='linear-gradient('+grad2+','+grad3+')';
+            items[i].style.backgroundImage='-webkit-linear-gradient('+grad2+','+grad3+')';
+            items[i].style.backgroundImage='-o-linear-gradient('+grad2+','+grad3+')';
+            items[i].style.backgroundImage='-moz-linear-gradient('+grad2+','+grad3+')';
+
         }    
         
     }

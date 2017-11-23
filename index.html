@@ -442,21 +442,33 @@ function minimiseBar() {
 
     <script>
     
-    window.onload = chooseImg;
+    window.onload = chooseClr();
     
-    function chooseImg () {
+    function getRandomColor() {
+      var letters = '0123456789ABCDEF';
+      var color = '#';
+      for (var i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    } 
     
-    var img = new Array('bgs/1.jpg','bgs/2.jpg','bgs/3.jpg','bgs/4.jpg','bgs/5.jpg','bgs/6.jpg','bgs/7.jpg','bgs/8.jpg','bgs/9.jpg','bgs/10.jpg','bgs/11.jpg','bgs/12.jpg','bgs/13.jpg','bgs/14.jpg','bgs/15.jpg','bgs/16.jpg','bgs/17.jpg','bgs/18.jpg','bgs/19.jpg','bgs/20.jpg');
-    var x= document.getElementsByClassName("item");
+    function chooseClr () {
+       
+    var items = document.getElementsByClassName("item");
     var i;
-    for(i=0;i<x.length;i++)
-        {
-            var randomNum = Math.round(Math.random() * (img.length - 1)) + 1;
-            x[i].style.backgroundImage = 'url('+img[randomNum]+')';
-            x[i].style.backgroundRepeat = "no-repeat";
-        }
+    for(i=0;i<items.length;i++) {
+            
+            items[i].style.background=getRandomColor();
+            items[i].style.background='-webkit-linear-gradient('+getRandomColor()+',grey);';
+            items[i].style.background='-o-linear-gradient('+getRandomColor()+',grey);';
+            items[i].style.background='-moz-linear-gradient('+getRandomColor()+',grey);';
+            items[i].style.background='linear-gradient('+getRandomColor()+',grey);';
+        }    
+        
     }
-
+    
+    //"linear-gradient (" + getRandomColor() + ", grey);"
     </script>
     
 

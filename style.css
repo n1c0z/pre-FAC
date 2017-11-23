@@ -547,7 +547,7 @@ figcaption{
     height:100%;
     overflow:auto;
     background-color:rgb(0,0,0);
-    background-color:rgba(0,0,0,0.8)
+    background-color:rgba(0,0,0,0.8);
 }
 
 .modal-image{
@@ -557,13 +557,13 @@ figcaption{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
 
+}
 
 .modal-hover {
     opacity:1;
     filter:alpha(opacity=100);
-    -webkit-backface-visibility:hidden
+    -webkit-backface-visibility:hidden;
 }
 
 .close {

@@ -24,11 +24,10 @@ and open the template in the editor.
 
               <a href="#">NICHOLAS</a>
             </div>
-            <div class="dropdown" id="dropdown">    
-            <button type="button" class="navbar-toggle" onclick="navToggle()">
-		<i class="fa fa-bars"></i>
-            </button>      
-            <div class="nav-menu">   
+            <a href="#nav-menu" id="navbar-toggle"><button type="button" class="navbar-toggle" onclick="navToggle()">
+            <i class="fa fa-bars"></i>
+            </button></a>      
+            <div class="nav-menu" id="nav-menu">   
             <ul class="nav-items" id="nav-items">
                 <li><a href="#aboutme">AboutMe</a></li>
                 <li><a href="#experience">Experience</a></li>
@@ -66,8 +65,9 @@ function minimiseBar() {
     }
 }
 
- function navToggle() {
-    document.getElementById("nav-menu").style.display = "block";
+ function navToggle() {     
+       var element = document.getElementById("nav-menu");
+       element.classList.toggle("nav-menu");
 } 
 
 </script>
@@ -496,7 +496,7 @@ function minimiseBar() {
                                                     <input type="text" class="form-item" name="name" placeholder="Name *">
                                                     <input type="email" class="form-item" name="email" placeholder="E-mail Address *">
                                                     <input type="text" class="form-item" placeholder="Subject *">
-                                                    <textarea id="form-area" rows="10"  name="message" placeholder="Your Message *"></textarea>
+                                                    <textarea type="text" id="form-area" rows="10"  name="message" placeholder="Your Message *"></textarea>
                                                     <input type="submit" id="submit" value="Send">
                                             </div>
                                     </form>
@@ -518,7 +518,7 @@ function minimiseBar() {
                                         So why don't you go ahead and click the button below!
                                         </p>
                                         
-                                        <span class="button">ACCEPT ME!</span>
+                                        <span class="button" onclick="acceptMe()">ACCEPT ME!</span>
                                         
                                     </div>
                                     
@@ -529,6 +529,14 @@ function minimiseBar() {
             </div>       
         </section>
 
+    <script>
+
+    function acceptMe(message) {
+      document.getElementById("button").src = message.src;
+      document.getElementById("modal").style.display = "block";
+    }
+
+    </script>
 
 
   <footer role="contentinfo">
@@ -536,10 +544,7 @@ function minimiseBar() {
     <span>NICHOLAS © 2017</span>
     </div>
     </footer>
-            <!-- Custom JavaScript
-        <script type="text/javascript" src="js/functions.js"></script> -->
-        <!-- Contact Form JavaScript 
-        <script type="text/javascript" src="js/validate.js"></script> -->
+
 
     </body>
 </html>

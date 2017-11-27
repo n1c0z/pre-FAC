@@ -649,13 +649,21 @@ figcaption{
     -webkit-backface-visibility:hidden
 }
 
+/* The Close Button */
 .close {
-    text-decoration:none;
-    float:right;
-    font-size:24px;
-    font-weight:bold;
-    color:white
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
 }
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 
 @media screen and (max-width: 700px) {
 
@@ -813,6 +821,7 @@ figcaption{
     width: 47%;
     float:left;
     padding: 10px;
+    margin-bottom: 1em;
 }
 
 .contact-message {
@@ -829,6 +838,14 @@ figcaption{
     
 }
 
+.required {
+    font-size: 1em;
+    letter-spacing: 1px;
+    float: left;
+    padding:5px;
+    
+}
+
 .form-item {
     width:100%;
     border: 1px solid #c3bec2;
@@ -836,11 +853,10 @@ figcaption{
     height: 30px;
     background: white;
     border-radius: 0;
-    margin-bottom: 20px;
     padding: 5px;
 }
 
-#form-area {
+.form-area {
     width:100%;
     border: 1px solid #c3bec2;
     font-size: 16px;
@@ -852,8 +868,8 @@ figcaption{
     
 }
 
-#submit {
-    margin: .5em;
+.submit {
+    margin: 0 auto 2em auto;
     display: inline-block;
     padding: .8em 1.5em .8em 1.5em;
     font-family: sans-serif;
@@ -866,17 +882,33 @@ figcaption{
 
 }
 
-#submit:hover,
-#submit:focus {
+.submit:hover,
+.submit:focus {
     color: black;
     background: white;  
     font-weight: 700;
 }
 
+#email_validation, #name_validation {
+    display:none;
+}
+
+label.required:after {
+  content:'*';
+  color:red;
+}
+
+span.error {
+  background-color:#FFDFDF;
+  color:red;
+}
+
+
 .acceptme {
     line-height: 2;
     font-size: 1.1em;
-    padding: 0 2em 0 2em;
+    padding: 0 2em 2em 2em;
+    margin: 0 auto 2em auto;
 }
 
 .button {
@@ -947,7 +979,27 @@ figcaption{
     }
 }
 
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 30px 0px 0 10px;
+    border: 1px solid #888;
+    width: 50%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
+#modal-icon {
+    width: 30%;
+    float: left;
+}
+
+#modal-logo {
+    border-radius: 50%;
+    width: 150px;
+}
 
 
 footer{

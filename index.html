@@ -80,9 +80,9 @@ function minimiseBar() {
                     <p class="home-text">WELCOME TO MY PAGE</p>
                     <h1 class="home-heading">COLLABORATE WITH ME</h1>
                         <ul class="list-inline">
-                            <li><a href="#" class="fa-icons"><i class="fa fa-github" aria-hidden="true" style="width:40px"></i></a></li>
-                            <li><a href="#" class="fa-icons"><i class="fa fa-free-code-camp" aria-hidden="true" style="width:40px"></i></a></li>
-                            <li><a href="#" class="fa-icons"><i class="fa fa-empire" aria-hidden="true" style="width:40px"></i></a></li>
+                            <li><a href="https://github.com/nik0lz/CF317N_Project" class="fa-icons"><i class="fa fa-github" aria-hidden="true" style="width:40px"></i></a></li>
+                            <li><a href="https://www.freecodecamp.org/nik0lz" class="fa-icons"><i class="fa fa-free-code-camp" aria-hidden="true" style="width:40px"></i></a></li>
+                            <li><a href="https://www.codewars.com/users/nik0laz" class="fa-icons"><i class="fa fa-empire" aria-hidden="true" style="width:40px"></i></a></li>
                         </ul>
                     <h3 style="margin: 2em auto 0 auto;">
                         <a href="#aboutme" class="home-btn">
@@ -149,9 +149,9 @@ function minimiseBar() {
                              became our only way forward. </p>
                              <p>After a year in the making and in between other projects we finally have a functional site 
                              that aims to serve this purpose. 
-                             However, as with the majority of web design projects, 
-                             there is always room for improvement. </p>
-                             <p>I am hoping that the Founders and Coders community and 
+                             However, as with most web design projects, 
+                             there is room for improvement. </p>
+                             <p>I hope the Founders and Coders community and 
                              the opportunity to participate in the full stack developer course, 
                              will assist greatly in moving this project forward.    
                             </p>
@@ -524,9 +524,9 @@ function minimiseBar() {
                                     <div class="acceptme">
                                         <p>
                                         I couldn't be any more grateful for the challenges and encouregment that the Founders and Coders community have given me to go on. <br>
-                                        It would be an absolute honour to be able to join the next cohort and being able to actively contribute to any on going projects. <br>
-                                        Even though this will be my third application for the London course, I am hoping this will also be the luckiest. <br>
-                                        So why don't you go ahead and click the button below!
+                                        It would be an absolute honour to to join the next cohort and actively contribute to any on going projects and meetups. <br>
+                                        Even though this is my third application for the London course, I hope this will also be the luckiest. <br>
+                                        Would you agree? Click the button below!
                                         </p>
                                         
                                         <span class="button" id="accept_me">ACCEPT ME!</span>
@@ -542,9 +542,9 @@ function minimiseBar() {
                                                 <img id="modal-logo" src="img/avatar1.jpeg" alt="my avatar" >
                                             </div>  
                                             <div id="modal-message"> 
-                                            <h2>Congratulations!</h2>    
-                                                <p>A message to Nicholas confirming acceptance to the next cohort has been sent successfully.</p>
-                                                <button class="submit" id="oh_yes">Hurrah...</button>
+                                            <h2>Allow me to join you</h2>    
+                                                <p></p>
+                                                <p><button class="submit" id="like" onclick="like()"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>Like</button> (<strong>0</strong>)</p>
                                             </div>
                                         </div>
                                        
@@ -613,10 +613,8 @@ function minimiseBar() {
     }
 
     var modal = document.getElementById('myModal');
-    var logo = document.getElementById('modal_logo');
-    var msg = document.getElementById('modal_message');
     var btn = document.getElementById("accept_me");
-    var woo = document.getElementById("oh_yes");
+    var like = document.getElementById("like");
     var span = document.getElementsByClassName("close")[0];
 
     btn.onclick = function() {
@@ -633,9 +631,14 @@ function minimiseBar() {
         }
     }
     
-        woo.onclick = function () {
-        msg.p.innerHTML = "Don't worry! This is just a spoof message... ";
-        }
+    var numLikes = 0;
+
+    var like = function() {
+      numLikes = numLikes + 1;
+
+      var strTag = document.querySelectorAll("strong")[0];
+      strTag.innerText = numLikes;
+    }
 
     </script>
 

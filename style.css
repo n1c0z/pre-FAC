@@ -537,7 +537,7 @@ header {
 }
 
 .pbphp{
-    width: 55%;
+    width: 45%;
     background-color: darkred;
     transition-duration: 2s;
     transition-property: all;
@@ -869,7 +869,7 @@ figcaption{
 }
 
 .submit {
-    margin: 0 auto 2em auto;
+    margin: 0 auto 0 auto;
     display: inline-block;
     padding: .8em 1.5em .8em 1.5em;
     font-family: sans-serif;
@@ -879,7 +879,6 @@ figcaption{
     color: white;
     font-size: 1em;
     background: dimgrey;
-
 }
 
 .submit:hover,
@@ -982,13 +981,17 @@ span.error {
 .modal-content {
     background-color: #fefefe;
     margin: auto;
-    padding: 30px 0px 0 10px;
+    padding: 30px 20px 0 10px;
     border: 1px solid #888;
-    width: 50%;
+    width: 60%;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+#modal-message {
+    text-align: left;
 }
 
 #modal-icon {
@@ -999,8 +1002,17 @@ span.error {
 #modal-logo {
     border-radius: 50%;
     width: 150px;
+    padding: 10px;
 }
 
+@media screen and (max-width: 1000px) {
+    #modal-icon {
+        display:none;
+    }
+    #modal-message {
+        text-align: center;
+    }
+}
 
 footer{
 color: white;

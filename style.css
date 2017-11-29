@@ -132,7 +132,7 @@ header {
     left: 0;
     margin: 0;
     text-transform: uppercase;
-    padding: 5px;
+    padding: 10px 10px 5px 10px;
     transition-duration: .3s;
     transition-property: all;
     transition-timing-function: ease-in-out; 

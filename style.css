@@ -116,7 +116,7 @@ header {
     left: 0;
     margin: 0;
     text-transform: uppercase;
-    padding: 10px;
+    padding: 10px 10px 5px 10px;
     position: fixed;
     transition-duration: .3s;
     transition-property: all;

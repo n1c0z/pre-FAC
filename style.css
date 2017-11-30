@@ -182,7 +182,7 @@ header {
     display: flex;
     flex-direction: row; 
     float:right;
-    padding: 10px 20px 10px 0px;
+    padding: 15px 20px 10px 0px;
     letter-spacing: 1px;
     transition-duration: .2s;
     transition-property: all;
@@ -207,7 +207,7 @@ header {
     color:black; 
     flex-direction: row; 
     float:right;
-    padding: 0px 20px 0px 0px;
+    padding: 5px 20px 0px 0px;
     letter-spacing: 1px;
     margin-bottom: 0;
     transition-duration: .2s;

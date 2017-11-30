@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
+This is a single page website hosted on Github pages.
 -->
 <html>
     
@@ -41,37 +39,6 @@ and open the template in the editor.
   
         </nav>    
 <!-- end navbar-->
-
-<script type="text/javascript">
-
-window.onscroll = function() {minimiseBar();};
-
-function minimiseBar() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("navbar").className = "nav-small";
-        document.getElementById("nav-header").className = "nav-head";
-        document.getElementById("nav-items").className = "nav-itm";
-    } else {
-        document.getElementById("navbar").className = "navbar";
-        document.getElementById("nav-header").className = "nav-header";
-        document.getElementById("nav-items").className = "nav-items";
-    }
-    if (document.body.scrollTop > 1400 || document.documentElement.scrollTop > 1400) {
-        document.getElementById("sql").className = "bar pbsql"; 
-        document.getElementById("html").className = "bar pbhtml";
-        document.getElementById("css").className = "bar pbcss";
-        document.getElementById("php").className = "bar pbphp";
-        document.getElementById("js").className = "bar pbjs";     
-    }
-}
-
- function navToggle() {     
-       var element = document.getElementById("nav-menu");
-       element.classList.toggle("nav-menu");
-} 
-
-</script>
-
 
 <header class="home">
 <div class="home-body">
@@ -114,11 +81,11 @@ function minimiseBar() {
 		     <p>Web development is becoming my greatest passion for a variety of reasons. </p>
                         <p>To start with, it embodies creativity, innovation, critical thinking, logic and most importantly engagement and interaction to its core. 
                         What I love the most about it is the sense of fulfilment and satisfaction it creates. 
-                        The possibility of creating something that can improve a process or someone'92s way of work or life, create something new 
+                        The possibility of creating something that can improve a process or someone's way of work or life, create something new 
                         or offer an alternative solution to a problem is my biggest aspiration for learning web design. </p>
                         <p>Even though I am still on my first steps, I have thoroughly enjoyed the journey so far 
                         and I am looking forward to continue, not on my own anymore, 
-                        but as part of a collaborative community, such as Founders and Coders. 	
+                        but as part of a collaborative community, such as Founders &amp; Coders. 	
 			</p>
 			<p>
                     <a href="#" class="btn"></a>
@@ -151,7 +118,7 @@ function minimiseBar() {
                              that aims to serve this purpose. 
                              However, as with most web design projects, 
                              there is room for improvement. </p>
-                             <p>I strongly believe the Founders and Coders community can assist greatly in moving this project forward.    
+                             <p>I strongly believe the Founders &amp; Coders community can assist greatly in moving this project forward.    
                             </p>
                         
                             </div>  
@@ -316,14 +283,6 @@ function minimiseBar() {
             </div>
     </section>
 
-    <script>
-
-    function onClick(element) {
-      document.getElementById("img").src = element.src;
-      document.getElementById("modal").style.display = "block";
-    }
-
-    </script>
 
     <section class="likes" id="likes">
              
@@ -443,215 +402,93 @@ function minimiseBar() {
             </div>
         </div>
     </section>
-
-    <script>
-    
-    window.onload = chooseClr();
-    
-    function getRandomColour() {
-      var letters = '0123456789ABCDEF';
-      var colour = '#';
-      for (var i = 0; i < 6; i++) {
-        colour += letters[Math.floor(Math.random() * 16)];
-      }
-      return colour;
-    } 
-    
-    function chooseClr () {
-       
-    var items = document.getElementsByClassName("item");
-    var grad3 = 'rgb(220, 220, 220)';
-    var i;
-    for(i=0;i<items.length;i++) {
-            var grad2 = getRandomColour().toString();
-            items[i].style.backgroundImage='linear-gradient('+grad2+','+grad3+')';
-            items[i].style.backgroundImage='-webkit-linear-gradient('+grad2+','+grad3+')';
-            items[i].style.backgroundImage='-o-linear-gradient('+grad2+','+grad3+')';
-            items[i].style.backgroundImage='-moz-linear-gradient('+grad2+','+grad3+')';
-
-        }    
-        
-    }
-    
-    //"linear-gradient (" + getRandomColor() + ", grey);"
-    </script>
     
 
-        <section id="contact" class="contact">
-                <div class="container">
-                    <div class="row">
-                        <div class="contact-wrapper">
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-wrapper">
+                    <div class="contact-area">
+                        <div class="heading">                                           
+                        <h2>GET IN TOUCH</h2>
+                        </div>
+                        <form id="contact_form" action="" method="POST" onsubmit="return validateForm();" enctype="multipart/form-data">
+                            <div class="form">
+                                <label class="required" for="name">Your name:</label><br />
+                                <input id="name" class="form-item" name="name" type="text" value="" size="30" /><br />
+                                <span id="name_validation" class="error"></span>
+                            </div>
+                            <div class="form">
+                                <label class="required" for="email">Your email:</label><br />
+                                <input id="email" class="form-item" name="email" type="text" value="" size="30" /><br />
+                                <span id="email_validation" class="error"></span>
+                            </div>
+                            <div class="form">
+                                <label class="required" for="message">Your message:</label><br />
+                                <textarea id="message" class="form-area" name="message" rows="7" cols="30"></textarea><br />
+                                <span id="message_validation" class="error"></span>
+                            </div>
+                                <input type="submit" value="Send" id="submit" class="submit"/>
+                        </form>
+                    </div>
 
-                                <div class="contact-area">
+                    <div class="contact-message">
 
-                                    <div class="heading">                                           
-                                    <h2>GET IN TOUCH</h2>
-                                    </div>
-                                   
+                        <div class="heading">                                      
+                        <h2>ACCEPT ME</h2>
+                        </div>
 
-                                    <form id="contact_form" action="" method="POST" onsubmit="return validateForm();" enctype="multipart/form-data">
-                                        <div class="form">
-                                          <label class="required" for="name">Your name:</label><br />
-                                          <input id="name" class="form-item" name="name" type="text" value="" size="30" /><br />
-                                          <span id="name_validation" class="error"></span>
-                                        </div>
-                                        <div class="form">
-                                          <label class="required" for="email">Your email:</label><br />
-                                          <input id="email" class="form-item" name="email" type="text" value="" size="30" /><br />
-                                          <span id="email_validation" class="error"></span>
-                                        </div>
-                                        <div class="form">
-                                          <label class="required" for="message">Your message:</label><br />
-                                          <textarea id="message" class="form-area" name="message" rows="7" cols="30"></textarea><br />
-                                          <span id="message_validation" class="error"></span>
-                                        </div>
+                    <div class="acceptme">
+                        <p>
+                        I relish the challenges that lay ahead and really appreciate the encouragement Founders &amp; Coders have given me. <br>
+                        I would be honoured to participate in the next cohort and be given the opportunity to contribute on every level. <br>
+                        Since my last application I have learned so much more, pushed myself and sought out others in the community for their knowledge and expertise<br> 
+                        That has guided me on my path of learning as much as I can and gaining more confidence to forge ahead.  
+                        </p>
 
-                                          <input type="submit" value="Send" id="submit" class="submit"/>
-                                    </form>
-
-                                    
-                                </div>
-
-
-                                <div class="contact-message">
-
-                                    <div class="heading">                                      
-                                    <h2>ACCEPT ME</h2>
-                                    </div>
-                                    
-                                    <div class="acceptme">
-                                        <p>
-                                        I relish the challenges that lay ahead and really appreciate the encouragement Founders and Coders have given me. <br>
-                                        I would be honoured to participate in the next cohort and be given the opportunity to contribute on every level. <br>
-                                        Since my last application I have learned so much more, pushed myself and sought out others in the community for their knowledge and expertise<br> 
-                                        That has guided me on my path of learning as much as I can and gaining more confidence to forge ahead.  
-                                        </p>
-                                        
-                                        <span class="button" id="accept_me">ACCEPT ME!</span>
-                                        
-                                    </div>
-                                    
-                                    <!-- The Modal -->
-                                    <div id="myModal" class="modal">
-
-                                        <!-- Modal content -->
-                                        <div class="modal-content">
-                                            <div id="modal-icon">
-                                                <img id="modal-logo" src="img/avatar1.jpeg" alt="my avatar" >
-                                            </div>  
-                                            <div id="modal-message"> 
-                                            <h2>What I have to offer</h2>    
-                                                <p>It would give me the greatest pleasure to join and immerse myself 
-						wholeheartedly in the Founders and Coders community. 
-						I bring passion, unwavering commitment and contribution to the community in any way I can (i.e. financially, time, assistance and support to others).</p> 
-						<p>Lets create and collaborate together.</p>
-                                            </div>    
-                                            <div>    
-                                                <p><button class="submit" id="like" onclick="like()">
-						<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>Like</button> (<strong>0</strong>)</p>
-                                            </div>
-                                        </div>
-                                       
-                                    </div>
-
-                                    
-                                </div>
+                        <span class="button" id="accept_me">ACCEPT ME!</span>
 
                     </div>
+
+                    <!-- The Modal -->
+                    <div id="msgModal" class="modal">
+
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <div id="modal-icon">
+                                <img id="modal-logo" src="img/avatar1.jpeg" alt="my avatar" >
+                            </div>  
+                            <div id="modal-message"> 
+                            <h2>What I have to offer</h2>    
+                                <p>It would give me the greatest pleasure to join and immerse myself 
+                                wholeheartedly in the Founders &amp; Coders community. 
+                                I bring passion, unwavering commitment and contribution to the community in any way I can (i.e. financially, time, assistance and support to others).</p> 
+                                <p>Lets create and collaborate together.</p>
+                            </div>    
+                            <div>    
+                                <p><button class="submit" id="like" onclick="like()">
+                                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>Like</button> (<strong>0</strong>)</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>       
-        </section>
-
-    <script>
-
-    function validateForm() {
-      var valid = 1;
-      var email = document.getElementById('email');
-      var email_validation = document.getElementById("email_validation");
-      var name = document.getElementById('name');
-      var name_validation = document.getElementById("name_validation");
-      var message_validation = document.getElementById("message_validation");
-      var filter = /^([a-zA-Z0-9_.-])+@(([a-zA-Z0-9-])+.)+([a-zA-Z0-9]{2,4})+$/;
-
-      if (name.value === "") {
-        valid = 0;
-        name_validation.innerHTML = "Field Required";
-        name_validation.style.display = "block";
-        name_validation.parentNode.style.backgroundColor = "#FFDFDF";
-      } else {
-        name_validation.style.display = "none";
-        name_validation.parentNode.style.backgroundColor = "transparent";
-      }
-
-      if (message.value === "") {
-        valid = 0;
-        message_validation.innerHTML = "Field Required";
-        message_validation.style.display = "block";
-        message_validation.parentNode.style.backgroundColor = "#FFDFDF";
-      } else {
-        message_validation.style.display = "none";
-        message_validation.parentNode.style.backgroundColor = "transparent";
-      }
-
-      if (email.value === "") {
-        valid = 0;
-        email_validation.innerHTML = "Field Required";
-        email_validation.style.display = "block";
-        email_validation.parentNode.style.backgroundColor = "#FFDFDF";
-      } else {
-        email_validation.style.display = "none";
-        email_validation.parentNode.style.backgroundColor = "transparent";
-      }
-
-      if(!filter.test(email.value)) {
-        valid = 0;
-        email_validation.innerHTML = "Invalid email address";
-        email_validation.style.display = "block";
-        email_validation.parentNode.style.backgroundColor = "#FFDFDF";
-      } else {
-        email_validation.style.display = "none";
-        email_validation.parentNode.style.backgroundColor = "transparent";
-      }
-      if (!valid)
-        return false;
-    }
-
-    var modal = document.getElementById('myModal');
-    var btn = document.getElementById("accept_me");
-    var like = document.getElementById("like");
-    var span = document.getElementsByClassName("close")[0];
-
-    btn.onclick = function() {
-        modal.style.display = "block";
-    }
-
-    span.onclick = function() {
-        modal.style.display = "none";
-    }
-
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
+            </div>
+        </div>
+    </div>       
+</section>
     
-    var numLikes = 0;
-
-    var like = function() {
-      numLikes = numLikes + 1;
-
-      var strTag = document.querySelectorAll("strong")[0];
-      strTag.innerText = numLikes;
-    }
-
-    </script>
-
-
+    
   <footer role="contentinfo">
     <div class="footer">
     <span>NICHOLAS © 2017</span>
     </div>
     </footer> 
 
+<!-- Custom Javascript -->
+<script src="js/functions.js"></script>
+<!-- Form Validation JavaScript -->
+<script src="js/validate.js"></script>    
+    
+    
     </body>
 </html>

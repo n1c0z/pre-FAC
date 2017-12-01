@@ -862,14 +862,13 @@ figcaption{
     font-size: 16px;
     background: white;
     border-radius: 0;
-    margin-bottom: 20px;
     padding: 5px;  
     letter-spacing: 0;
     
 }
 
 .submit {
-    margin: 0 auto 0 auto;
+    margin: 1em auto 1em auto;
     display: inline-block;
     padding: .8em 1.5em .8em 1.5em;
     font-family: sans-serif;

@@ -847,7 +847,7 @@ figcaption{
 }
 
 .form-item {
-    width:100%;
+    width:95%;
     border: 1px solid #c3bec2;
     font-size: 16px;
     height: 30px;
@@ -857,7 +857,7 @@ figcaption{
 }
 
 .form-area {
-    width:100%;
+    width:95%;
     border: 1px solid #c3bec2;
     font-size: 16px;
     background: white;

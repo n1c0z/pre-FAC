@@ -11,11 +11,10 @@ function minimiseBar() {
         document.getElementById("nav-items").className = "nav-items";
     }
     if (document.body.scrollTop > 1400 || document.documentElement.scrollTop > 1400) {
-        document.getElementById("sql").className = "bar pbsql"; 
-        document.getElementById("html").className = "bar pbhtml";
-        document.getElementById("css").className = "bar pbcss";
-        document.getElementById("php").className = "bar pbphp";
-        document.getElementById("js").className = "bar pbjs";     
+        document.getElementById("sk1").className = "bar pbsk1"; 
+        document.getElementById("sk2").className = "bar pbsk2";
+        document.getElementById("sk3").className = "bar pbsk3";
+        document.getElementById("sk4").className = "bar pbsk4";   
     }
 }
 
@@ -55,7 +54,7 @@ function chooseClr () {
 }
 
     var modal = document.getElementById('msgModal');
-    var btn = document.getElementById("accept_me");
+    var btn = document.getElementById("hire_me");
     var span = document.getElementsByClassName("close")[0];
 
 btn.onclick = function() {

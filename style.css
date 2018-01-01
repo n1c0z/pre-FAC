@@ -182,7 +182,7 @@ header {
     display: flex;
     flex-direction: row; 
     float:right;
-    padding: 15px 20px 10px 0px;
+    padding: 10px 20px 10px 0px;
     letter-spacing: 1px;
     transition-duration: .2s;
     transition-property: all;
@@ -207,7 +207,7 @@ header {
     color:black; 
     flex-direction: row; 
     float:right;
-    padding: 5px 20px 0px 0px;
+    padding: 0px 20px 0px 0px;
     letter-spacing: 1px;
     margin-bottom: 0;
     transition-duration: .2s;
@@ -282,7 +282,7 @@ header {
     padding:100px 0 100px 0;
     text-align:center;
     color:#fff;
-    background-image: radial-gradient(circle at 50% 50%,rgba(0,0,0,0.46),rgba(0,0,0,0.88)),url("img/clouds.jpg");
+    background-image: radial-gradient(circle at 50% 50%,rgba(0,0,0,0.46),rgba(0,0,0,0.88)),url("img/landscape.jpg");
     background-size:cover;
     background-color: white;
 }
@@ -422,7 +422,7 @@ header {
 
 @media screen and (max-width: 1000px) {
     .about-photo {display:none}
-    .col-2-3 {width: 95%; 
+    .col-2-3 {width: 90%; 
               margin: auto 1em auto 1em;}
     .abm {text-align:center}
 }    
@@ -430,7 +430,7 @@ header {
 /*For Experience Section*/
 
 .experience{
-    background: url(img/stgeorges.jpg) no-repeat center top fixed;
+    background: url(img/city.jpg) no-repeat center top fixed;
     background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
@@ -511,7 +511,7 @@ header {
   width:1%;
 }  
 
-.pbsql{
+.pbsk1{
     width: 75%;
     background-color: darkcyan;
     transition-duration: 2s;
@@ -520,7 +520,7 @@ header {
 
 }
 
-.pbhtml{
+.pbsk2{
     width: 60%;
     background-color: darkolivegreen;
     transition-duration: 2s;
@@ -528,7 +528,7 @@ header {
     -webkit-transition: 2s;
 }
 
-.pbcss{
+.pbsk3{
     width: 50%;
     background-color: darkgoldenrod;
     transition-duration: 2s;
@@ -536,7 +536,7 @@ header {
     -webkit-transition: 2s;
 }
 
-.pbphp{
+.pbsk4{
     width: 45%;
     background-color: darkred;
     transition-duration: 2s;
@@ -544,13 +544,6 @@ header {
     -webkit-transition: 2s;
 }
 
-.pbjs{
-    width: 40%;
-    background-color: darkmagenta;
-    transition-duration: 2s;
-    transition-property: all;
-    -webkit-transition: 2s;
-}
 
 @media screen and (max-width: 770px) {
     .col-2-5, .col-3-5  { width: 90%; padding: 1em}
@@ -564,7 +557,7 @@ header {
   background-size:cover;
   background-position:center center;
   margin: 0 auto 0 auto;
-  padding: 50px 10px 50px 10px;
+  padding: 0px 10px 50px 10px;
 }
 
 #arts .row
@@ -847,7 +840,7 @@ figcaption{
 }
 
 .form-item {
-    width:95%;
+    width:100%;
     border: 1px solid #c3bec2;
     font-size: 16px;
     height: 30px;
@@ -857,18 +850,19 @@ figcaption{
 }
 
 .form-area {
-    width:95%;
+    width:100%;
     border: 1px solid #c3bec2;
     font-size: 16px;
     background: white;
     border-radius: 0;
+    margin-bottom: 20px;
     padding: 5px;  
     letter-spacing: 0;
     
 }
 
 .submit {
-    margin: 1em auto 1em auto;
+    margin: 0 auto 0 auto;
     display: inline-block;
     padding: .8em 1.5em .8em 1.5em;
     font-family: sans-serif;
@@ -902,7 +896,7 @@ span.error {
 }
 
 
-.acceptme {
+.hireme {
     line-height: 2;
     font-size: 1.1em;
     padding: 0 2em 2em 2em;
